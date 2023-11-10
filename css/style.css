@@ -1,15 +1,30 @@
 body {
   padding: 1rem;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
-.label {
+.body {
+  background-color: #91abd6 !important;
+}
+
+.title {
+  text-align: center;
+  font-size: 4em;
   font-weight: bold;
-  margin: 1rem 0;
+  padding-bottom: 0.5em;
+}
+
+.description {
+  padding: 0.5em;
+}
+
+.description span {
+  font-weight: bolder;
 }
 
 #userCode {
   padding: 1rem;
+  border-radius: 10px;
   font-family: monospace;
   background-color: black;
   color: greenyellow;
@@ -36,11 +51,18 @@ body {
   cursor: pointer;
 }
 
+.board-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 #board {
   margin-top: 1rem;
   display: inline-block;
   background-color: black;
   border: 1px solid black;
+  text-align: center;
 }
 
 .cellRow {
@@ -86,4 +108,22 @@ body {
 
 .cellCurrent-right {
   transform: rotate(0deg);
+}
+
+.green {
+  color: green;
+}
+
+.blue {
+  color: blue;
+}
+
+.red {
+  color: red;
+  font-size: large;
+  font-weight: bold;
+}
+
+.rules {
+  font-weight: bolder;
 }
